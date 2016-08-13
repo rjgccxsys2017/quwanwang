@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/static/bootstrap/ico/favicon.ico">
+
+    <title>趣玩网注册</title>
+
+    <!-- Bootstrap core CSS -->
+  	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/style.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/animate.css" rel="stylesheet">
+    <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'home' %}"><img src="/static/bootstrap/img/logo.png" alt="..."></a>
+        </div>
+        <div class="collapse navbar-collapse">        
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="{% url 'home' %}">首页</a>
+            </li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">页面 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'about_us' %}">关于我们</a></li>
+                <li><a href="{% url 'contact_us' %}">联系我们</a></li>
+                <li><a href="{% url 'center' %}">帮助中心</a></li>
+                <li><a href="{% url 'shop_item' %}">帮助项目</a></li>
+                <li><a href="{% url 'sign_in' %}">登 录</a></li>
+                <li><a href="{% url 'sign_up' %}">注 册</a></li>
+                <li><a href="{% url 'error_page' %}">404 错误页面</a></li>
+              </ul>
+            </li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">动 态 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'blog' %}">视频广场</a></li>
+                <li><a href="{% url 'blog_post' %}">博客中心</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">商城 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'shop' %}">商城</a></li>
+                <li><a href="{% url 'shop_item' %}">商店项目</a></li>
+                <li><a href="{% url 'shopping_cart' %}">购物车</a></li>
+                <li><a href="{% url 'user_profile' %}">个人中心</a></li>
+              </ul>
+            </li>   
+              
+            <!-- Navbar Search -->
+            <li class="hidden-xs" id="navbar-search">
+              <a href="#">
+                <i class="fa fa-search"></i>
+              </a>
+              <div class="hidden" id="navbar-search-box">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Mobile Search -->
+          <form class="navbar-form navbar-right visible-xs" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-danger" type="button">Search!</button>
+              </span>
+            </div>
+          </form>          
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- / .navigation -->
+	<span id="header_shadow" style="width: 100%; top: 30px;"></span>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+	  
+	  <!-- Topic Header -->
+      <div class="topic">
+        <div class="container">
+          <div class="row">            
+            <ol class="breadcrumb hidden-xs">
+              <li><a href="{% url 'home' %}">首 页</a></li>
+              <li class="active">注 册</li>
+            </ol>                      
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> <!-- / .Topic Header -->      
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="sign-form">
+              <div class="sign-inner">
+                <h3 class="first-child">创建账号</h3>
+                <hr>
+                <form action="{% url 'sign_up' %}" class="form" role="form" method='post'>{% csrf_token %}
+                  <div class="form-group" >
+                    <input type="text" class="form-control" name="usrrealname" id="usrrealname" placeholder="姓 名" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter your full name here." data-original-title="realname">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="usrusername" id="usrusername" placeholder="昵 称" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter your nickname here." data-original-title="username">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="usremail" id="usremail" placeholder="邮 箱" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter a valid email here." data-original-title="email">
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <input type="password" class="form-control margin-bottom-xs" name="usrpassword" id="usrpassword" placeholder="密 码" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter a good password here." data-original-title="password">
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="password" class="form-control" name="usrrpeatpassword" id="usrrepeatpassword" placeholder="确认密码" data-toggle="popover" data-trigger="focus" data-content="Confirm your password here." data-original-title="repeatpassword">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> 我同意规定的 <a href="#">服务条件</a> 和 <a href="#">隐私权政策</a>
+                    </label>
+                  </div>
+				          <a href="#" type="submit" value="创建账户" class="btn btn-red">创建账号</a>                  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> <!-- / .row -->      
+      </div> <!-- / .container -->
+
+    </div> <!-- / .wrapper -->
+
+    <!-- Copyright -->
+  <div class="copyrights">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+        <div class="copyright">
+          <footer>
+            <small>&copy; 趣玩网 2016 易海阳台. All rights reserved.</small>
+          </footer>
+        </div>
+      </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container --> 
+  </div><!-- / .Copyright -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap/js/scrolltopcontrol.js"></script>
+	<script src="/static/bootstrap/js/SmoothScroll.js"></script>
+    <script src="/static/bootstrap/js/custom.js"></script>
+    <!--<script src="/static/bootstrap/js/sign-up.js"></script>-->
+  </body>
+</html>

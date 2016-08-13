@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/static/bootstrap/ico/favicon.ico">
+
+    <title>趣玩网商店项目</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="/static/bootstrap/css/style.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/animate.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/lightbox.css" rel="stylesheet">
+    <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="..."></a>
+        </div>
+
+         <div class="collapse navbar-collapse">        
+                  <ul class="nav navbar-nav navbar-right">
+                    <li>
+                      <a href="index.html">首页</a>
+                    </li>
+                    <li class="dropdown active">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">页面 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="about-us.html">关于我们</a></li>
+                        <li><a href="contact-us.html">联系我们</a></li>
+                        <li><a href="help-center.html">帮助中心</a></li>
+                        <li><a href="help-item.html">帮助项目</a></li>
+                        <li><a href="sign-in.html">登 录</a></li>
+                        <li><a href="sign-up.html">注 册</a></li>
+                        <li><a href="error-page.html">404 错误页面</a></li>
+                      </ul>
+                    </li>            
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">动 态 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="blog.html">视频广场</a></li>
+                        <li><a href="blog-post.html">博客中心</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">商城 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="shop.html">商城</a></li>
+                        <li><a href="shop-item.html">商店项目</a></li>
+                        <li><a href="shopping-cart.html">购物车</a></li>
+                        <li><a href="user-profile.html">个人中心</a></li>
+                      </ul>
+                    </li>   
+
+            <!-- Navbar Search -->
+            <li class="hidden-xs" id="navbar-search">
+              <a href="#">
+                <i class="fa fa-search"></i>
+              </a>
+              <div class="hidden" id="navbar-search-box">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+                
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- / .navigation -->
+	<span id="header_shadow" style="width: 100%; top: 30px;"></span>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+	
+	  <!-- Topic Header -->
+      <div class="topic">
+        <div class="container">
+          <div class="row">            
+            <ol class="breadcrumb hidden-xs">
+              <li><a href="index.html">首 页</a></li>
+              <li><a href="shop.html">商 城</a></li>
+              <li class="active">商店项目</li>
+            </ol>                      
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> <!-- / .Topic Header -->      
+
+      <div class="container shop-item">
+        <div class="row">
+		  <div class="col-sm-3">
+		    <!-- Customer Sign In -->
+			<div class="panel-heading">
+              <strong>用户登录</strong>
+            </div>
+		    <form role="form">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input type="email" class="form-control" id="email" placeholder="邮 箱" data-original-title="" title="">
+              </div>
+              <br />
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                <input type="password" class="form-control" id="password" placeholder="密 码" data-original-title="" title="">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">  记住密码
+                </label>
+              </div>
+			  <a type="submit" class="btn btn-sm btn-red">登 录</a>
+			  <hr>
+            </form>
+		    <br />
+            <!-- Search -->
+            <form role="form">              
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <span class="input-group-btn">					  
+                        <button class="btn btn-danger" type="button"><i class="fa fa-search"></i></button>
+                      </span>
+                    </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->              
+            </form><br /><br />
+            <!-- Categories -->
+            <div class="panel-group" id="help-nav">
+              <div class="panel">
+                <div class="panel-heading bg-darkblue">
+                  <a data-toggle="collapse" data-parent="#help-nav" href="#help-nav-one">
+                   交易列表
+                  </a>
+                </div>
+                <div id="help-nav-one" class="panel-collapse collapse in">
+                  <div class="panel-body bg-red">
+                    <ul>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading bg-darkblue">
+                  <a data-toggle="collapse" data-parent="#help-nav" href="#help-nav-two" class="collapsed">
+                    时装领域
+                  </a>
+                </div>
+                <div id="help-nav-two" class="panel-collapse collapse">
+                  <div class="panel-body bg-red">
+                    <ul>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading bg-darkblue">
+                  <a data-toggle="collapse" data-parent="#help-nav" href="#help-nav-three" class="collapsed">
+                    电子乐器
+                  </a>
+                </div>
+                <div id="help-nav-three" class="panel-collapse collapse">
+                  <div class="panel-body bg-red">
+                    <ul>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading bg-darkblue">
+                  <a data-toggle="collapse" data-parent="#help-nav" href="#help-nav-five" class="collapsed">
+                    琴弦乐器
+                  </a>
+                </div>
+                <div id="help-nav-five" class="panel-collapse collapse">
+                  <div class="panel-body bg-red">
+                    <ul>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading bg-darkblue">
+                  <a data-toggle="collapse" data-parent="#help-nav" href="#help-nav-six" class="collapsed">
+                    管乐器
+                  </a>
+                </div>
+                <div id="help-nav-six" class="panel-collapse collapse">
+                  <div class="panel-body bg-red">
+                    <ul>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                      <li><a href="#">子列表</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="product-img">
+                  <a href="img/shop/shop-img1.jpg" data-lightbox="products">
+                    <img src="img/shop/shop-img1.jpg" class="img-responsive main" alt="...">
+                  </a>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <a href="img/shop/shop-img1.jpg" data-lightbox="products">
+                        <img src="img/shop/shop-img1.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-xs-4">
+                      <a href="img/shop/shop-img3.jpg" data-lightbox="products">
+                        <img src="img/shop/shop-img3.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-xs-4">
+                      <a href="img/shop/shop-img7.jpg" data-lightbox="products">
+                        <img src="img/shop/shop-img7.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="first-child"><span>钢 琴</span></h3>
+                <ul class="rating list-inline">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li> 
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span class="text-muted reviews"><a href="#">(月销售：98)</a></span>
+				<div>
+                  <div class="price-block">
+                    <span class="price">¥4999</span>
+                    <input type="number" name="pcs" value="1" class="form-control">
+                  </div>
+                </div>
+                <p class="text-muted">
+                  交错的黑白键孕育着各种不同的美妙音乐,轻轻触按出一组和铉,振动出不可思议的乐声,钢琴就是如此迷人,它古朴、生动,任何你意想不到的声音都可以表现在干净的黑白键上,还有踏板,也许那不引人注意,可是它升华了音乐的灵魂,当双手落在琴键上弹起乐曲时,那就是一幅画.    
+                </p>
+				<br />               
+                <a class="btn btn-red" href="#"><i class="fa fa-shopping-cart"></i> 添加到购物车</a>
+				<br /><br /><br />
+				
+              </div>
+            </div>
+
+            <!-- Item Description -->
+            <div class="row">
+              <div class="col-sm-12">
+                <h3><span>商品描述</span></h3>
+				<hr />
+                <p>
+                  钢琴是源自西洋古典音乐中的一种键盘乐器，与小提琴，古典吉他并称为世界三大乐器。人们口中所说的乐器之父就是钢琴，而乐器之母是小提琴，乐器王子是古典吉他。
+                  <br>
+                  钢琴的演奏技巧十分丰富，可以自如地弹奏各种音阶、半音阶，各种音程的跳动，各种双音、和弦以及各种复杂的乐曲。
+                  <br>
+                  一般钢琴有三个踏板，左边为弱音踏板，踩下该踏板后，余音甚少，多用于弱奏；右边为延音踏板，踩下该踏板后，琴音可延长，声音响亮，多用于长时值音符或强音的演奏。而中间的脚踏会因应钢琴的设计而有不同用途，但多数为减音脚踏，用法不只是踏一下，而是要踏下后再向左推，而有部份牌子的设计是踏一下是启动，再踏一下是关闭；当减音踏板踏下时会有一块绒布隔在琴锤与琴弦之间，用作将声音减到最底之用；但减音系统有一个坏处，因为用作减音的绒布是一块过的，当弹一个音时，震动可能会伸延到其它的琴弦，从面影响了钢琴的音准，听着有机会像未调琴的钢琴一样；另一种中间脚踏的用途是“特定连音踩板”，用途主要是用作选定琴键去延音，用法是先弹下琴键不放，踩下“特定延音踏板”不放，你会发觉，当你弹下刚才选择需要延音的音会继续有延音，但没有选的是没有延音的，但通常有特定延音的钢琴也会有“减音装置”的，但不是用脚去操控，而是一个手掣，通常在琴键之下的左右两边。钢琴的音域宽广，音色洪亮、清脆，富于变化，表现力很强。独奏时，可演奏各种气势磅礴、宽广、抒情的音乐，亦可演奏欢快、灵巧、技巧性很高的华彩乐段；钢琴在乐队中，可发挥巨大的作用。它还经常作为伴奏乐器使用。
+                </p>
+              </div>
+            </div> <!-- / .row -->
+			
+			<div class="row">
+              <div class="col-sm-12">
+                <h3><span>你可能还喜欢...</span></h3>
+				<hr />
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="shop-product">
+                      <a href="shop-item.html"><img src="img/shop/shop-img10.jpg" class="img-responsive" alt="..."></a>
+                      <a href="shop-item.html"><h5 class="primary-font">吉 他</h5></a>
+                      <p>
+                        ¥499
+                      </p>
+					  <p class="text-muted">
+                        出售人 : Jhon smith						
+                      </p>					  
+                    </div>
+					<div class="add-to-cart">
+					  <a href="#" class="btn btn-sm btn-red"><i class="fa fa-shopping-cart"></i> 添加到购物车</a>
+					</div>
+                  </div>
+				</div>
+			  </div>
+			</div> <!-- / .row -->
+			
+            <div class="row">
+              <div class="col-sm-12">
+                <h3><span>相关商品</span></h3>
+				<hr />
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="shop-product featured">
+                      <a href="shop-item.html"><img src="img/shop/shop-img4.jpg" class="img-responsive" alt="..."></a>
+                      <a href="shop-item.html"><h5 class="primary-font">古 筝</h5></a>
+                      <p class="price">
+                        <span class="old">¥1599</span>
+                        <span class="new">¥999</span>
+                      </p>
+					  <p class="text-muted">
+                        出售人 : Jhon smith						
+                      </p>					  
+                    </div>
+					<div class="add-to-cart">
+					  <a href="#" class="btn btn-sm btn-red"><i class="fa fa-shopping-cart"></i> 添加到购物车</a>
+					</div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="shop-product">
+                      <a href="shop-item.html"><img src="img/shop/shop-img8.jpg" class="img-responsive" alt="..."></a>
+                      <a href="shop-item.html"><h5 class="primary-font">琵 琶</h5></a>
+                      <p>
+                        ¥799
+                      </p>
+					  <p class="text-muted">
+                        出售人 : Jhon smith						
+                      </p>					  
+                    </div>
+					<div class="add-to-cart">
+					  <a href="#" class="btn btn-sm btn-red"><i class="fa fa-shopping-cart"></i> 添加到购物车</a>
+					</div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="shop-product featured">
+                      <a href="shop-item.html"><img src="img/shop/shop-img9.jpg" class="img-responsive" alt="..."></a>
+                      <a href="shop-item.html"><h5 class="primary-font">电子琴</h5></a>
+                      <p class="price">
+                        <span class="old">¥999</span>
+                        <span class="new">¥699</span>
+                      </p>
+					  <p class="text-muted">
+                        出售人 : Jhon smith						
+                      </p>					  
+                    </div>
+					<div class="add-to-cart">
+					  <a href="#" class="btn btn-sm btn-red"><i class="fa fa-shopping-cart"></i> 添加到购物车</a>
+					</div>
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </div> <!-- / .row -->
+          </div>          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div> <!-- / .wrapper -->
+
+
+
+       <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+    
+          <!-- Contact Us -->
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h4>联系我们</h4>            
+            <p>
+              phono: 17756021315<br><br />
+               Q Q : 2501550358
+              <br /><br />
+              email: anhuijianzhu@yihiayangtai.com
+              <br /><br />
+            </p>      
+          </div><!-- / .Contact Us -->
+      
+      <!-- Useful Links -->
+          <div class="col-xs-12 col-sm-4 col-md-4">            
+            <h4>有用链接</h4>
+            <p>
+              <a href="shop.html">购物商城</a><br />
+              <a href="user-profile.html">个人中心</a><br />
+              <a href="#">视频广场</a><br />
+              <a href="help-center.html">帮助中心 </a><br />  
+              <a href="#">校园社区</a><br />
+              <a href="coming-soon.html">网站更新</a><br />            
+            </p>
+          </div><!-- / .Useful Links -->
+    
+      
+          <!-- Newsletter -->
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h4>时事通讯</h4>
+            <p>
+              请向我们提供你想要的时事信息，我们将下发到你的邮箱，请注意查收             
+            </p>
+            <form class="form" role="form">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="input-group">
+                    <label class="sr-only" for="subscribe-email">请输入你的要求...</label>
+                    <input type="email" class="form-control" id="subscribe-email" placeholder="请输入你的要求...">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-danger">发 送</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <br />
+            <h4>跟随我们</h4>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>        
+              </ul>
+          </div><!-- / .Newsletter -->    
+        </div> <!-- / .row -->    
+      </div> <!-- / .container -->    
+    </footer><!-- / .Footer -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap/js/scrolltopcontrol.js"></script>
+	<script src="/static/bootstrap/js/SmoothScroll.js"></script>
+    <script src="/static/bootstrap/js/lightbox-2.6.min.js"></script>
+    <script src="/static/bootstrap/s/custom.js"></script>
+  </body>
+</html>

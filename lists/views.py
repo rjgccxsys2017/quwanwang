@@ -92,3 +92,58 @@ def sign_in(request):
 
 def user_profile(request):
 	return render(request,'lists/user-profile.html')
+
+def portfolio(request):
+	return render(request,'lists/portfolio.html')
+
+def portfolio_item_1(request):
+	return render(request,'lists/portfolio_item_1.html')
+
+def portfolio_item_2(request):
+	return render(request,'lists/portfolio_item_2.html')
+	
+def portfolio_item_3(request):
+	return render(request,'lists/portfolio_item_3.html')
+	
+def portfolio_item_4(request):
+	return render(request,'lists/portfolio_item_4.html')
+	
+def portfolio_item_5(request):
+	return render(request,'lists/portfolio_item_5.html')
+	
+def portfolio_item_6(request):
+	return render(request,'lists/portfolio_item_6.html')
+	
+def portfolio_item_7(request):
+	return render(request,'lists/portfolio_item_7.html')
+	
+def portfolio_item_8(request):
+	return render(request,'lists/portfolio_item_8.html')
+	
+def portfolio_item_9(request):
+	return render(request,'lists/portfolio_item_9.html')
+	
+def portfolio_item_10(request):
+	return render(request,'lists/portfolio_item_10.html')
+	
+def portfolio_item_11(request):
+	return render(request,'lists/portfolio_item_11.html')
+	
+def portfolio_item_12(request):
+	return render(request,'lists/portfolio_item_12.html')
+	
+def university(request):
+	return render(request,'lists/university.html')
+	
+def user_profile_myemail(request):
+	return render(request,'lists/user_profile_myemail.html')
+	
+def user_profile_mymessage(request):
+	return render(request,'lists/user_profile_mymessage.html')
+	
+def xiaoyuan(request):
+	return render(request,'lists/xiaoyuan.html')
+
+def shipin(request):
+	return render(request,'lists/shipin.html')
+	

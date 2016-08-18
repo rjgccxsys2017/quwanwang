@@ -1,0 +1,450 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/static/bootstrap/ico/favicon.ico">
+
+    <title>趣玩网首页</title>
+	
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="/static/bootstrap/css/style.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/animate.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/lightbox.css" rel="stylesheet">
+	  <link href="/static/bootstrap/css/cubeportfolio.min.css" rel="stylesheet">
+    <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+	
+	  <script type="text/javascript" src="/static/bootstrap/js/modernizr.custom.69142.js"></script>
+    
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'home' %}"><img src="/static/bootstrap/img/logo.png" alt="..."></a>
+        </div>
+        <div class="collapse navbar-collapse">        
+                  <ul class="nav navbar-nav navbar-right">
+                    <li>
+                      <a href="{% url 'home' %}">首页</a>
+                    </li>
+                    <li class="dropdown active">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">页面 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{% url 'about_us' %}">关于我们</a></li>
+                        <li><a href="{% url 'contact_us' %}">联系我们</a></li>
+                        <li><a href="{% url 'center' %}">帮助中心</a></li>
+                        <li><a href="{% url 'item' %}">帮助项目</a></li>
+                        <li><a href="{% url 'sign_in' %}">登 录</a></li>
+                        <li><a href="{% url 'sign_up' %}">注 册</a></li>
+                        <li><a href="{% url 'error_page' %}">404 错误页面</a></li>
+                      </ul>
+                    </li>            
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">动 态 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{% url 'blog' %}">视频广场</a></li>
+                        <li><a href="{% url 'blog_post' %}">博客中心</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">商城 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{% url 'shop' %}">商城</a></li>
+                        <li><a href="{% url 'shop_item' %}">商店项目</a></li>
+                        <li><a href="{% url 'shopping_cart' %}">购物车</a></li>
+                        <li><a href="{% url 'user_profile' %}">个人中心</a></li>
+                      </ul>
+                    </li>   
+
+            <!-- Navbar Search -->
+            <li class="hidden-xs" id="navbar-search">
+              <a href="#">
+                <i class="fa fa-search"></i>
+              </a>
+              <div class="hidden" id="navbar-search-box">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+               
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- / .navigation -->
+	<span id="header_shadow" style="width: 100%; top: 30px;"></span>
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+      <!-- Home Slider -->
+      <div class="home-slider">
+        <!-- Carousel -->
+        <div id="home-slider" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#home-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#home-slider" data-slide-to="1"></li>
+            <li data-target="#home-slider" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <!-- Slide #1 -->
+            <div class="item active" id="item-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-7">
+                    <h1 class="first-child animated slideInDown delay-3"><strong>趣玩网</strong></h1>
+          					<h3 class="animated fadeInUpBig delay-4">引领特色艺术文化，艺出人生，秀出风彩
+                    <br>
+                    <span class="text-darkblue"><strong><p></p></strong></span>梦想从这里起飞，明天在这里造就</h3>          
+          					<br />
+          					<h4 class="animated bounceInDown delay-5"><span>舞蹈</span></h4>
+          					<h4 class="animated bounceInDown delay-5"><span>乐器</span></h4>
+          					<h4 class="animated bounceInDown delay-5"><span>运动</span></h4>                    
+                  </div>                 
+                </div> <!-- / .row -->
+              </div> <!-- / .container -->
+            </div> <!-- / .item -->
+            <!-- Slide #2 -->
+            <div class="item" id="item-2">
+              <div class="container">
+                <div class="row">				  
+                  <div class="col-sm-12">
+				            <h1 class="first-child animated fadeInUpBig delay-2"><strong>趣玩网</strong></h1> 
+                    <ul class="string">
+          					  <li class="animated fadeInUpBig delay-4"><span><strong>欢迎来到 
+                        <a href="{% url 'home' %}"><span class="text-white">趣玩网</span></a></strong></span></li>
+                    </ul>
+          					<h2 class="animated bounceInDown delay-4">
+                    <span class="bg-darkblue"><a href="{% url 'blog' %}">视频广场</span></a>
+
+                    <span class="bg-yellow">专业教学</span></h2>
+
+                  </div> 
+                </div> <!-- / .row -->
+              </div> <!-- / .container -->          
+            </div> <!-- / .item -->
+            <!-- Slide #3 -->
+            <div class="item" id="item-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">                    
+					<h1 class="first-child animated fadeInUpBig delay-3"><strong><span class="bg-yellow text-white">趣玩网</span></strong></h1>					
+                    <ul class="animated flipInX delay-5">
+                      <li><i class="fa fa-star"></i> 传授艺术 放飞梦想</li>
+                      <li><i class="fa fa-star"></i> 为你打开艺术之门</li>
+                      <li><i class="fa fa-star"></i> 带你开创绚丽人生</li>
+                    </ul>				
+					             <a href="{% url 'shop' %}" class="btn btn-lg btn-red animated bounceInDown delay-3">商 城</a>					
+                  </div>                 
+                </div> <!-- / .row -->
+              </div> <!-- / .container -->            
+            </div> <!-- / .item -->
+          </div> <!-- / .carousel -->
+          <!-- Controls -->
+          <a class="carousel-arrow carousel-arrow-prev hidden-xs hidden-sm" href="#home-slider" data-slide="prev">
+            <i class="fa fa-angle-left fa-2x"></i>
+          </a>
+          <a class="carousel-arrow carousel-arrow-next hidden-xs hidden-sm" href="#home-slider" data-slide="next">
+            <i class="fa fa-angle-right fa-2x"></i>
+          </a>
+        </div>
+      </div> <!-- / .home-slider -->	  
+	  
+	  <!-- Divider Shadow -->
+	  <div class="divider-shadow">
+		<img src="/static/bootstrap/img/divider-shadow1.png" alt="devider" class="/static/bootstrap/responsive-img"/>
+	  </div><!-- /.Divider Shadow -->
+	  
+	  <!-- Browser Showcase -->
+	  <div class="browser-showcase">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="first-child text-center">欢迎来到 
+                        <a href="{% url 'home' %}"><strong><span class="text-darkblue">趣玩网</span></strong></a></h1>
+              <h4 class="text-darkblue text-center"> 包罗世界的才艺表演 & 专业的才艺教学  </h4>
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+	  </div> <!-- / .Browser Showcase -->
+
+      <!-- Main Services -->
+      <div class="main-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-lightbulb-o"></i>
+                  <div class="service-desc">
+                    <h4>器 乐</h4>
+                  <p>音乐是不假任何外力，直接沁人心脾的最纯的感情的火焰；它是从口吸入的空气，它是生命的血管中流通着的血液</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-book"></i>
+                  <div class="service-desc">
+                    <h4>运 动</h4>
+                    <p>生命在于矛盾，在于运动，<br>一旦矛盾消除，运动停止，<br>生命也就结束了</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-thumbs-o-up"></i>
+                  <div class="service-desc">
+                    <h4>舞 蹈</h4>
+                    <p>舞蹈是放飞心灵的风筝，只有舞动起来，人生才更美丽，在自己尽情舞动的乐池下，拥有一片自己自由飞翔的蓝天</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-leaf"></i>
+                  <div class="service-desc">
+                    <h4>益 智</h4>
+                    <p>让眼球带动大脑的转动，思维源于视频高于视频，每一分钟的展示都是难以错过的精彩，在玩中体会思考的乐趣</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-cogs"></i>
+                  <div class="service-desc">
+                    <h4>手 工</h4>
+                    <p>灵心胜造物，妙手夺天工。用自己的双手打造一份属于自己的传奇。在这里，你就是“造物主”，让我们一起开启手工
+                       之旅吧</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-camera"></i>
+                  <div class="service-desc">
+                    <h4>书 画</h4>
+                    <p>书海无边际，意境无止境，古诗现词，水墨油纸；书海画洋等你来，传承中华之精髓，彰显风华之绝代</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> <!-- / .main-features -->
+	  
+	  
+      <!-- Services feature1 -->
+      <div class="services-feature1">
+        <div class="container">
+          <div class="row">			
+			       <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				        <a href="#"><i class="fa fa-desktop"></i></a>              
+                <h3>趣玩网</h3>
+				        <div>
+                  <p>
+                    一个主要为了孩子的网站<br>启迪艺术的智慧<br>引领睿智的才华
+                  </p>
+                </div>
+              </div>
+            </div>
+			       <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				        <a href="#"><i class="fa fa-cogs"></i></a>              
+                <h3>全新的世界</h3>
+				        <div>
+                  <p>
+                    趣玩网通过视频玩乐的形式，<br>让孩子发现自己的兴趣之所在，<br>在专业的视频教学中愉快的去学习
+                  </p>
+                </div>
+              </div>
+            </div>
+			      <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				        <a href="#"><i class="fa fa-camera"></i></a>              
+                <h3>才艺培训</h3>
+				        <div>
+                  <p>
+                    这里，孩子的艺术乐园<br>这里，艺术的殿堂，梦想的舞台<br>艺术大舞台，人生更精彩
+                  </p>
+                </div>
+              </div>
+            </div>			
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				        <a href="{% url 'shop' %}"><i class="fa fa-pagelines"></i></a>             
+                <h3>商 城</h3>
+				        <div>
+                  <p>
+                   在这里，有着专业的器材<br>在这里，有着专业的老师推荐<br>在这里，有着最低的价格
+                  </p>
+                </div>
+              </div>
+            </div>		
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				        <a href="{% url 'center' %}"><i class="fa fa-comments-o"></i></a>               
+                <h3>帮助中心</h3>
+				        <div>
+                  <p>
+                    以艰苦的作风打拼坚实的服务基础<br>以诚实的信念承诺一流的人工服务<br>以实干的精神争取广大的用户信赖
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				        <a href="#"><i class="fa fa-magic"></i></a>               
+                <h3>视频广场</h3>
+				        <div>
+                  <p>
+                    让眼球带动大脑的转动，思维源于视频高于视频，展现难以错过的精彩，体会学习的乐趣，在视频的观看中，发现自己的兴趣，培养艺术气质，提升人格魅力
+                  </p>
+                </div>
+              </div>
+            </div>           
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> <!-- / .Service Feature1 -->
+	  
+	  <!-- Services feature2 -->
+	  <div class="service-feature2">
+		<div class="container">
+	      <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-8">
+              <h1>才 艺 集 萃，视 频 风 云</h1>
+              <h4><em><strong>视频广场，给你一个不一样的视频体验</strong></em></h4>
+            </div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+              <a class="btn btn-lg btn-darkblue pull-right" href="#">Go Now!</a>    
+			</div>
+		  </div> <!-- / .row -->
+        </div> <!-- / .container -->
+	  </div><!-- / .Services feature2 -->	  
+</div> <!-- / .wrapper -->
+
+
+         <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+    
+          <!-- Contact Us -->
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h4>联系我们</h4>            
+            <p>
+              phono: 17756021315<br><br />
+               Q Q : 2501550358
+              <br /><br />
+              email: anhuijianzhu@yihiayangtai.com
+              <br /><br />
+            </p>      
+          </div><!-- / .Contact Us -->
+      
+      <!-- Useful Links -->
+          <div class="col-xs-12 col-sm-4 col-md-4">            
+            <h4>有用链接</h4>
+            <p>
+              <a href="{% url 'shop' %}">购物商城</a><br />
+              <a href="{% url 'user_profile' %}">个人中心</a><br />
+              <a href="#">视频广场</a><br />
+              <a href="{% url 'center' %}">帮助中心 </a><br />  
+              <a href="#">校园社区</a><br />
+              <a href="{% url 'coming_soon' %}">网站更新</a><br />            
+            </p>
+          </div><!-- / .Useful Links -->
+    
+      
+          <!-- Newsletter -->
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h4>时事通讯</h4>
+            <p>
+              请向我们提供你想要的时事信息，我们将下发到你的邮箱，请注意查收             
+            </p>
+            <form class="form" role="form" action="{% url 'home' %}" method = "POST">
+            {% csrf_token %}
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="input-group">
+                    <label class="sr-only" for="subscribe-email">请输入你的要求...</label>
+                    <input type="email" class="form-control" name ="e_mailaddress" id="e_mailaddress" placeholder="请输入你的要求...">
+                
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-danger">发 送</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <br />
+            <h4>跟随我们</h4>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>        
+              </ul>
+          </div><!-- / .Newsletter -->    
+        </div> <!-- / .row -->    
+                
+                
+                
+                
+      </div> <!-- / .container -->    
+    </footer><!-- / .Footer -->
+
+
+
+	  
+	  
+
+    <!-- JavaScript -->
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap/js/scrolltopcontrol.js"></script>
+	<script src="/static/bootstrap/js/SmoothScroll.js"></script>
+    <script src="/static/bootstrap/js/lightbox-2.6.min.js"></script>
+	<script src="/static/bootstrap/js/jquery.cubeportfolio.min.js"></script>
+    <script src="/static/bootstrap/js/custom.js"></script>
+    <script src="/static/bootstrap/js/index.js"></script>
+  </body>
+</html>

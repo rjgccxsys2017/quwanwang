@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -46,23 +44,23 @@
                     <li>
                       <a href="{% url 'home' %}">首页</a>
                     </li>
+                    <li><a href="##">大学社区</a></li>
                     <li class="dropdown active">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">页面 <b class="caret"></b></a>
                       <ul class="dropdown-menu">
                         <li><a href="{% url 'about_us' %}">关于我们</a></li>
                         <li><a href="{% url 'contact_us' %}">联系我们</a></li>
-                        <li><a href="{% url 'center' %}">帮助中心</a></li>
-                        <li><a href="{% url 'item' %}">帮助项目</a></li>
+                        <li><a href="{% url 'help_center' %}">帮助中心</a></li>
+                        <li><a href="{% url 'help_item' %}">帮助项目</a></li>
                         <li><a href="{% url 'sign_in' %}">登 录</a></li>
                         <li><a href="{% url 'sign_up' %}">注 册</a></li>
-                        <li><a href="{% url 'error_page' %}">404 错误页面</a></li>
                       </ul>
                     </li>            
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">动 态 <b class="caret"></b></a>
                       <ul class="dropdown-menu">
-                        <li><a href="{% url 'blog' %}">视频广场</a></li>
-                        <li><a href="{% url 'blog_post' %}">博客中心</a></li>
+                        <li><a href="{% url 'shipin' %}">视频广场</a></li>
+                        <li><a href="{% url 'blog' %}">博客中心</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">
@@ -175,7 +173,7 @@
 	  
 	  <!-- Divider Shadow -->
 	  <div class="divider-shadow">
-		<img src="/static/bootstrap/img/divider-shadow1.png" alt="devider" class="/static/bootstrap/responsive-img"/>
+		<img src="/static/bootstrap/img/divider-shadow1.png" alt="devider" class="responsive-img"/>
 	  </div><!-- /.Divider Shadow -->
 	  
 	  <!-- Browser Showcase -->
@@ -200,7 +198,7 @@
                 <div class="service-item">
                   <i class="fa fa-lightbulb-o"></i>
                   <div class="service-desc">
-                    <h4>器 乐</h4>
+                    <a href="{% url 'portfolio_item_1' %}"><h4>器 乐</h4></a>
                   <p>音乐是不假任何外力，直接沁人心脾的最纯的感情的火焰；它是从口吸入的空气，它是生命的血管中流通着的血液</p>
                   </div>
                 </div>
@@ -211,7 +209,7 @@
                 <div class="service-item">
                   <i class="fa fa-book"></i>
                   <div class="service-desc">
-                    <h4>运 动</h4>
+                    <a href="{% url 'portfolio_item_8' %}"><h4>运 动</h4></a>
                     <p>生命在于矛盾，在于运动，<br>一旦矛盾消除，运动停止，<br>生命也就结束了</p>
                   </div>
                 </div>
@@ -222,7 +220,7 @@
                 <div class="service-item">
                   <i class="fa fa-thumbs-o-up"></i>
                   <div class="service-desc">
-                    <h4>舞 蹈</h4>
+                    <a href="{% url 'portfolio_item_11' %}"><h4>舞 蹈</h4></a>
                     <p>舞蹈是放飞心灵的风筝，只有舞动起来，人生才更美丽，在自己尽情舞动的乐池下，拥有一片自己自由飞翔的蓝天</p>
                   </div>
                 </div>
@@ -235,7 +233,7 @@
                 <div class="service-item">
                   <i class="fa fa-leaf"></i>
                   <div class="service-desc">
-                    <h4>益 智</h4>
+                    <a href="{% url 'portfolio' %}"><h4>益 智</h4></a>
                     <p>让眼球带动大脑的转动，思维源于视频高于视频，每一分钟的展示都是难以错过的精彩，在玩中体会思考的乐趣</p>
                   </div>
                 </div>
@@ -246,7 +244,7 @@
                 <div class="service-item">
                   <i class="fa fa-cogs"></i>
                   <div class="service-desc">
-                    <h4>手 工</h4>
+                    <a href="{% url 'portfolio' %}"><h4>手 工</h4></a>
                     <p>灵心胜造物，妙手夺天工。用自己的双手打造一份属于自己的传奇。在这里，你就是“造物主”，让我们一起开启手工
                        之旅吧</p>
                   </div>
@@ -258,7 +256,7 @@
                 <div class="service-item">
                   <i class="fa fa-camera"></i>
                   <div class="service-desc">
-                    <h4>书 画</h4>
+                    <a href="{% url 'portfolio_item_5' %}"><h4>书 画</h4></a>
                     <p>书海无边际，意境无止境，古诗现词，水墨油纸；书海画洋等你来，传承中华之精髓，彰显风华之绝代</p>
                   </div>
                 </div>
@@ -297,8 +295,8 @@
             </div>
 			      <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="service-feature1">
-				        <a href="#"><i class="fa fa-camera"></i></a>              
-                <h3>才艺培训</h3>
+				        <a href="{% url 'portfolio' %}"><i class="fa fa-camera"></i></a>              
+                <h3>趣学堂</h3>
 				        <div>
                   <p>
                     这里，孩子的艺术乐园<br>这里，艺术的殿堂，梦想的舞台<br>艺术大舞台，人生更精彩
@@ -319,7 +317,7 @@
             </div>		
             <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="service-feature1">
-				        <a href="{% url 'center' %}"><i class="fa fa-comments-o"></i></a>               
+				        <a href="{% url 'help_center' %}"><i class="fa fa-comments-o"></i></a>               
                 <h3>帮助中心</h3>
 				        <div>
                   <p>
@@ -330,7 +328,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="service-feature1">
-				        <a href="#"><i class="fa fa-magic"></i></a>               
+				        <a href="{% url 'shipin' %}"><i class="fa fa-magic"></i></a>               
                 <h3>视频广场</h3>
 				        <div>
                   <p>
@@ -369,7 +367,7 @@
           <div class="col-xs-12 col-sm-4 col-md-4">
             <h4>联系我们</h4>            
             <p>
-              phono: 17756021315<br><br />
+              phono: 17756021315<br><br/>
                Q Q : 2501550358
               <br /><br />
               email: anhuijianzhu@yihiayangtai.com
@@ -381,11 +379,11 @@
           <div class="col-xs-12 col-sm-4 col-md-4">            
             <h4>有用链接</h4>
             <p>
-              <a href="{% url 'shop' %}">购物商城</a><br />
+             <a href="{% url 'shop' %}">购物商城</a><br />
               <a href="{% url 'user_profile' %}">个人中心</a><br />
-              <a href="#">视频广场</a><br />
-              <a href="{% url 'center' %}">帮助中心 </a><br />  
-              <a href="#">校园社区</a><br />
+              <a href="{% url 'shipin' %}">视频广场</a><br />
+              <a href="{% url 'help_center' %}">帮助中心 </a><br />  
+              <a href="{% url 'xiaoyuan' %}">校园社区</a><br />
               <a href="{% url 'coming_soon' %}">网站更新</a><br />            
             </p>
           </div><!-- / .Useful Links -->
@@ -398,13 +396,12 @@
               请向我们提供你想要的时事信息，我们将下发到你的邮箱，请注意查收             
             </p>
             <form class="form" role="form" action="{% url 'home' %}" method = "POST">
-            {% csrf_token %}
+            {% csrf_token %}>
               <div class="row">
                 <div class="col-xs-12">
                   <div class="input-group">
                     <label class="sr-only" for="subscribe-email">请输入你的要求...</label>
-                    <input type="email" class="form-control" name ="e_mailaddress" id="e_mailaddress" placeholder="请输入你的要求...">
-                
+                    <input type="email" class="form-control" id="e_mailaddress" name="e_mailaddress" placeholder="请输入你的要求...">
                     <span class="input-group-btn">
                       <button type="submit" class="btn btn-danger">发 送</button>
                     </span>
@@ -425,25 +422,18 @@
               </ul>
           </div><!-- / .Newsletter -->    
         </div> <!-- / .row -->    
-                
-                
-                
-                
-      </div> <!-- / .container -->    
+      </div> <!-- / .container -->  
+  
     </footer><!-- / .Footer -->
 
 
-
-	  
-	  
-
     <!-- JavaScript -->
-    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
     <script src="/static/bootstrap/js/bootstrap.min.js"></script>
     <script src="/static/bootstrap/js/scrolltopcontrol.js"></script>
-	<script src="/static/bootstrap/js/SmoothScroll.js"></script>
+	  <script src="/static/bootstrap/js/SmoothScroll.js"></script>
     <script src="/static/bootstrap/js/lightbox-2.6.min.js"></script>
-	<script src="/static/bootstrap/js/jquery.cubeportfolio.min.js"></script>
+	  <script src="/static/bootstrap/js/jquery.cubeportfolio.min.js"></script>
     <script src="/static/bootstrap/js/custom.js"></script>
     <script src="/static/bootstrap/js/index.js"></script>
   </body>

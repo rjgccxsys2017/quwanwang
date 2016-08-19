@@ -10,21 +10,29 @@ from .models import User
 
 
 def sign_up(request):
-    #if not request.method == 'POST':
-        #return HttpResponse('error post')
     if request.method == 'POST':
         form = UserForm(request.POST)
         if form.is_valid():
 
-            new_realname = request.POST['realname']
-            new_username = request.POST['username']
-            new_password = request.POST['password']
-            new_repeatpassword = request.POST['repeatpassword']
-            new_email = request.POST['email']
+            realname = form.cleaned_data['realname']
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            repeatpassword = form.cleaned_data['repeatpassword']
+            email = form.cleaned_data['email']
 
-            user = form.save()
+            if password and repeatpassword and password != repeatpassword:
+                return HttpResponse('Password ERROR')
+
+            user = User()
+            user.realname = realname
+            user.username = username
+            user.password = password
+            user.email = email
+            user.save()
+
+            
             
             return render(request,'account/success.html',{'form':UserForm})
 
     else:
-        return render(request,'account/sign_up.html',{'UserForm':UserForm})
+        return render(request,'account/sign_up.html',{'form':UserForm})

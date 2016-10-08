@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="shortcut icon" href="/static/bootstrap/ico/favicon.ico">
 
     <title>趣玩网关于我们</title>
 
     <!-- Bootstrap core CSS -->
     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-	<link href="css/bxslider.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+	<link href="/static/bootstrap/css/bxslider.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/style.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/animate.css" rel="stylesheet">
     <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.useso.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 	
-	<script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
+	<script type="text/javascript" src="/static/bootstrap/js/modernizr.custom.69142.js"></script> 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="..."></a>
+          <a class="navbar-brand" href="index.html"><img src="/static/bootstrap/img/logo.png" alt="..."></a>
         </div>
 
       <div class="collapse navbar-collapse">        
@@ -53,12 +53,12 @@
             <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">页面 <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="about_us.html">关于我们</a></li>
-                <li><a href="contact_us.html">联系我们</a></li>
-                <li><a href="help_center.html">帮助中心</a></li>
-                <li><a href="help_item.html">帮助项目</a></li>
-                <li><a href="sign_in.html">登 录</a></li>
-                <li><a href="sign_up.html">注 册</a></li>
+                <li><a href="{% url 'about_us' %}">关于我们</a></li>
+                <li><a href="{% url 'contact_us' %}">联系我们</a></li>
+                <li><a href="{% url 'help_center' %}">帮助中心</a></li>
+                <li><a href="{% url 'help_item' %}">帮助项目</a></li>
+                <li><a href="{% url 'sign_in' %}">登 录</a></li>
+                <li><a href="{% url 'sign_up' %}">注 册</a></li>
               </ul>
             </li>            
             <li class="dropdown">
@@ -141,16 +141,16 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="img/image1.jpg" class="img-responsive" alt="...">
+                  <img src="/static/bootstrap/img/image1.jpg" class="img-responsive" alt="...">
                 </div>
                 <div class="item">
-                  <img src="img/image2.jpg" class="img-responsive" alt="...">
+                  <img src="/static/bootstrap/img/image2.jpg" class="img-responsive" alt="...">
                 </div>
                 <div class="item">
-                  <img src="img/image3.jpg" class="img-responsive" alt="...">
+                  <img src="/static/bootstrap/img/image3.jpg" class="img-responsive" alt="...">
                 </div>
                 <div class="item">
-                  <img src="img/image4.jpg" class="img-responsive" alt="...">
+                  <img src="/static/bootstrap/img/image4.jpg" class="img-responsive" alt="...">
                 </div>                  
               </div>
               <!-- Controls -->
@@ -174,7 +174,7 @@
             <div class="row">
               <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="team-member text-center">
-                  <img class="img-responsive center-block" src="img/team/team1.jpg" alt="...">
+                  <img class="img-responsive center-block" src="/static/bootstrap/img/team/team1.jpg" alt="...">
                   <div class="info">
                     <h3><strong>作茧显孤独</strong></h3>
                     <p class="text-muted">创始人</p>
@@ -189,7 +189,7 @@
               </div>
               <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="team-member text-center">
-                  <img class="img-responsive center-block" src="img/team/team2.jpg" alt="...">
+                  <img class="img-responsive center-block" src="/static/bootstrap/img/team/team2.jpg" alt="...">
                   <div class="info">
                     <h3><strong>吹一样的风</strong></h3>
                     <p class="text-muted">开发者</p>
@@ -204,7 +204,7 @@
               </div>
               <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="team-member text-center">
-                  <img class="img-responsive center-block" src="img/team/team3.jpg" alt="...">
+                  <img class="img-responsive center-block" src="/static/bootstrap/img/team/team3.jpg" alt="...">
                   <div class="info">
                     <h3><strong>遗忘的时光</strong></h3>
                     <p class="text-muted">美化者</p>
@@ -219,7 +219,7 @@
               </div>
               <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="team-member text-center">
-                  <img class="img-responsive center-block" src="img/team/team4.jpg" alt="...">
+                  <img class="img-responsive center-block" src="/static/bootstrap/img/team/team4.jpg" alt="...">
                   <div class="info">
                     <h3><strong>独奏奈何桥</strong></h3>
                     <p class="text-muted">策划者</p>
@@ -397,11 +397,11 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scrolltopcontrol.js"></script>
-	<script src="js/SmoothScroll.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap/js/scrolltopcontrol.js"></script>
+	<script src="/static/bootstrap/js/SmoothScroll.js"></script>
+	<script src="/static/bootstrap/js/jquery.bxslider.min.js"></script>
+    <script src="/static/bootstrap/js/custom.js"></script>
 		
   </body>
 </html>

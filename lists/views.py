@@ -10,7 +10,7 @@ from django.core.urlresolvers import reverse
 		#fields = ('email')
 
 def about_us(request):
-	return render(request,'lists/about-us.html')
+	return render(request,'lists/about_us.html')
 
 def blog(request):
 	return render(request,'lists/blog.html')

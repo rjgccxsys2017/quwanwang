@@ -16,28 +16,28 @@ def blog(request):
 	return render(request,'lists/blog.html')
 
 def blog_post(request):
-	return render(request,'lists/blog-post.html')
+	return render(request,'lists/blog_post.html')
 
 def blog_post1(request):
-	return render(request,'lists/blog-post1.html')
+	return render(request,'lists/blog_post1.html')
 
 def blog_post2(request):
-	return render(request,'lists/blog-post2.html')
+	return render(request,'lists/blog_post2.html')
 
 def coming_soon(request):
-	return render(request,'lists/coming-soon.html')
+	return render(request,'lists/coming_soon.html')
 
 def contact_us(request):
-	return render(request,'lists/contact-us.html')
+	return render(request,'lists/contact_us.html')
 
 def error_page(request):
-	return render(request,'lists/error-page.html')
+	return render(request,'lists/error_page.html')
 
 def center(request):
-	return render(request,'lists/help-center.html')
+	return render(request,'lists/help_center.html')
 
 def item(request):
-	return render(request,'lists/help-item.html')
+	return render(request,'lists/help_item.html')
 
 def home(request):
 	
@@ -57,10 +57,10 @@ def shop(request):
 	return render(request,'lists/shop.html')
 
 def shop_item(request):
-	return render(request,'lists/shop-item.html')
+	return render(request,'lists/shop_item.html')
 
 def shopping_cart(request):
-	return render(request,'lists/shopping-cart.html')
+	return render(request,'lists/shopping_cart.html')
 
 def sign_in(request):
 	return render(request,'lists/sign_in.html')
@@ -91,7 +91,7 @@ def sign_in(request):
 	#return render(request,'account/sign_up.html')
 
 def user_profile(request):
-	return render(request,'lists/user-profile.html')
+	return render(request,'lists/user_profile.html')
 
 def portfolio(request):
 	return render(request,'lists/portfolio.html')

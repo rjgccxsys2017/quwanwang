@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="shortcut icon" href="/static/ico/favicon.ico">
 
     <title>趣玩网博客帖子</title>
 
     <!-- Bootstrap core CSS -->
     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/animate.css" rel="stylesheet">
     <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.useso.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 
@@ -38,39 +38,39 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="..."></a>
+          <a class="navbar-brand" href="{% url 'index' %}"><img src="/static/img/logo.png" alt="..."></a>
         </div>
          <div class="collapse navbar-collapse">        
                   <ul class="nav navbar-nav navbar-right">
                     <li>
-                      <a href="index.html">首页</a>
+                      <a href="{% url 'index' %}">首页</a>
                     </li>
                     <li><a href="##">大学社区</a></li>
                     <li class="dropdown active">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">页面 <b class="caret"></b></a>
                       <ul class="dropdown-menu">
-                        <li><a href="about_us.html">关于我们</a></li>
-                        <li><a href="contact_us.html">联系我们</a></li>
-                        <li><a href="help_center.html">帮助中心</a></li>
-                        <li><a href="help_item.html">帮助项目</a></li>
-                        <li><a href="sign_in.html">登 录</a></li>
-                        <li><a href="sign_up.html">注 册</a></li>
+                        <li><a href="{% url 'about_us' %}">关于我们</a></li>
+                        <li><a href="{% url 'contact_us' %}">联系我们</a></li>
+                        <li><a href="{% url 'help_center' %}">帮助中心</a></li>
+                        <li><a href="{% url 'help_item' %}">帮助项目</a></li>
+                        <li><a href="{% url 'sign_in' %}">登 录</a></li>
+                        <li><a href="{% url 'sign_up' %}">注 册</a></li>
                       </ul>
                     </li>            
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">动 态 <b class="caret"></b></a>
                       <ul class="dropdown-menu">
-                        <li><a href="shipin.html">视频广场</a></li>
-                        <li><a href="blog.html">博客中心</a></li>
+                        <li><a href="{% url 'shipin' %}">视频广场</a></li>
+                        <li><a href="{% url 'blog' %}">博客中心</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">商城 <b class="caret"></b></a>
                       <ul class="dropdown-menu">
-                        <li><a href="shop.html">商城</a></li>
-                        <li><a href="shop_item.html">商店项目</a></li>
-                        <li><a href="shopping_cart.html">购物车</a></li>
-                        <li><a href="user_profile.html">个人中心</a></li>
+                        <li><a href="{% url 'shop' %}">商城</a></li>
+                        <li><a href="{% url 'shop_item' %}">商店项目</a></li>
+                        <li><a href="{% url 'shopping_cart' %}">购物车</a></li>
+                        <li><a href="{% url 'user_profile' %}">个人中心</a></li>
                       </ul>
                     </li>   
 
@@ -103,8 +103,8 @@
         <div class="container">
           <div class="row">            
             <ol class="breadcrumb hidden-xs">
-              <li><a href="index.html">首 页</a></li>
-              <li><a href="blog.html">博 客</a></li>
+              <li><a href="{% url 'index' %}">首 页</a></li>
+              <li><a href="{% url 'blog' %}">博 客</a></li>
               <li class="active">博客帖子</li>
             </ol>                      
           </div> <!-- / .row -->
@@ -116,14 +116,14 @@
           <div class="col-sm-9">
             <!-- Blog Post #1 -->
             <div class="blog">
-              <img src="img/avatar.jpg" alt="...">
+              <img src="/static/img/avatar.jpg" alt="...">
               <div class="blog-desc">
                 <h3>
-                  <a href="blog_post.html">快乐阳光”重庆市第六届中小学生才艺大赛决赛</a>
+                  <a href="{% 'blog_post' %}">快乐阳光”重庆市第六届中小学生才艺大赛决赛</a>
                 </h3>
                 <hr>
                 <p class="text-muted">李子明 2011-07-09</p>                
-                <img class="img-responsive" src="img/blog/blog1-img.jpg" alt="...">
+                <img class="img-responsive" src="/static/img/blog/blog1-img.jpg" alt="...">
                 <p>
                 2011年7月9日是我参加“快乐阳光”重庆市第六届中小学生才艺大赛决赛的日子。我和妈妈出了门。一路上，我都十分自信地认为今天我一定发挥得不错。
                 <br>
@@ -149,7 +149,7 @@
             <!-- New comment form -->
 			  <div class="row">
               <div class="cmt">
-                <img src="img/avatar-6.jpg" alt="...">
+                <img src="/static/img/avatar-6.jpg" alt="...">
                 <div class="cmt-block">
                   <strong>参与评论</strong>
                   <form role="form" class="cmt-body">
@@ -165,7 +165,7 @@
               <h4 class="text-right">5个评论</h4>
               <hr>
               <div class="cmt">
-                <img src="img/avatar-1.jpg" alt="...">
+                <img src="/static/img/avatar-1.jpg" alt="...">
                 <div class="cmt-block">
                   <a href="user_profile.html" class="profile-link">斯人独憔悴</a> <span class="text-muted time">5分钟之前</span>
                   <span class="rating pull-right">
@@ -182,9 +182,9 @@
                 </div>
               </div>
               <div class="cmt">
-                <img src="img/avatar-2.jpg" alt="...">
+                <img src="/static/img/avatar-2.jpg" alt="...">
                 <div class="cmt-block">
-                  <a href="user_profile.html" class="profile-link">清月聊无痕</a> <span class="text-muted time">25分钟之前</span>
+                  <a href="{% url 'user_profile' %}" class="profile-link">清月聊无痕</a> <span class="text-muted time">25分钟之前</span>
                   <span class="rating pull-right">
                     <span class="up">0</span>
                     <i class="fa fa-thumbs-up voteup"></i>  <i class="fa fa-thumbs-down votedown"></i>
@@ -199,9 +199,9 @@
                 </div>
               </div>
               <div class="cmt">
-                <img src="img/avatar-3.jpg" alt="...">
+                <img src="/static/img/avatar-3.jpg" alt="...">
                 <div class="cmt-block">
-                  <a href="user_profile.html" class="profile-link">画船听雨眠 </a> <span class="text-muted time">50分钟之前</span>
+                  <a href="{% url 'user_profile' %}" class="profile-link">画船听雨眠 </a> <span class="text-muted time">50分钟之前</span>
                   <span class="rating pull-right">
                     <span class="up">0</span>
                     <i class="fa fa-thumbs-up voteup"></i>  <i class="fa fa-thumbs-down votedown"></i>
@@ -216,9 +216,9 @@
                 </div>
               </div>
 			  <div class="cmt">
-                <img src="img/avatar-4.jpg" alt="...">
+                <img src="/static/img/avatar-4.jpg" alt="...">
                 <div class="cmt-block">
-                  <a href="user_profile.html" class="profile-link">永恒总成空 </a> <span class="text-muted time">1小时之前</span>
+                  <a href="{% url 'user_profile' %}" class="profile-link">永恒总成空 </a> <span class="text-muted time">1小时之前</span>
                   <span class="rating pull-right">
                     <span class="up">0</span>
                     <i class="fa fa-thumbs-up voteup"></i>  <i class="fa fa-thumbs-down votedown"></i>
@@ -233,9 +233,9 @@
                 </div>
               </div>
 			  <div class="cmt">
-                <img src="img/avatar-5.jpg" alt="...">
+                <img src="/static/img/avatar-5.jpg" alt="...">
                 <div class="cmt-block">
-                  <a href="user_profile.html" class="profile-link">习惯性思念</a> <span class="text-muted time">2小时之前</span>
+                  <a href="{% url 'user_profile' %}" class="profile-link">习惯性思念</a> <span class="text-muted time">2小时之前</span>
                   <span class="rating pull-right">
                     <span class="up">0</span>
                     <i class="fa fa-thumbs-up voteup"></i>  <i class="fa fa-thumbs-down votedown"></i>
@@ -384,12 +384,12 @@
           <div class="col-xs-12 col-sm-4 col-md-4">            
             <h4>有用链接</h4>
             <p>
-             <a href="shop.html">购物商城</a><br />
-              <a href="user_profile.html">个人中心</a><br />
-              <a href="shipin.html">视频广场</a><br />
-              <a href="help_center.html">帮助中心 </a><br />  
-              <a href="xiaoyuan.html">校园社区</a><br />
-              <a href="coming_soon.html">网站更新</a><br />  
+             <a href="{% url 'shop' %}">购物商城</a><br />
+              <a href="{% url 'user_profile' %}">个人中心</a><br />
+              <a href="{% url 'shipin' %}">视频广场</a><br />
+              <a href="{% url 'help_center' %}">帮助中心 </a><br />  
+              <a href="{% url 'xiaoyuan' %}">校园社区</a><br />
+              <a href="{% url 'coming_soon' %}">网站更新</a><br />  
             </p>
           </div><!-- / .Useful Links -->
 		
@@ -434,9 +434,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scrolltopcontrol.js"></script>
-	<script src="js/SmoothScroll.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/scrolltopcontrol.js"></script>
+	<script src="/static/js/SmoothScroll.js"></script>
+    <script src="/static/js/custom.js"></script>
   </body>
 </html>
